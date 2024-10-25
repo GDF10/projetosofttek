@@ -1,0 +1,26 @@
+EM BUSCA DO SHAPE
+
+Guilherme Saccomani
+
+RM: 554467
+
+Tiago Veloso Macedo
+
+RM: 99551
+
+Zelio Horta Dias
+
+RM: 556046
+
+Marco Antônio
+
+RM: 558668
+
+Vitor Calandrim
+
+RM: 556573
+
+
+- para inicializar o chatbot basta dar o seguinte comando: npm start
+- em seguida ir no seu navegador e digitar na barra de pesquisa: http://localhost:3000/
+PS: lembrando que deve ser dado o "npm start" na própria pasta do chat bot, caso contrário não irá funcionar!!!

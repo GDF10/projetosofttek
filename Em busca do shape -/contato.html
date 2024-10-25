@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        onload="this.rel='stylesheet'">
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+   
+    <header class="header" id="header">
+        <!-- Efeito de transparencia porém ao mover some -->
+        <div class="wrapper d-flex">
+            <div class="logo">
+                <img src="images/logo.png" alt="Imagem logo">
+                <p>Em busca do Shape</p>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars open" id="open"></i>
+                <i class="fa-solid fa-x close" id="close"></i>
+            </div>
+            <nav id="nav-menu">
+                <ul class="d-flex">
+                    <li><a href="index.html" title="link da home">Home</a></li>
+                    <li><a href="chatbot.html" title="Link do chatbot">Chatbot</a></li>
+                    <li><a href="sobre-nos.html" title="link para sobre nós">Sobre nós</a></li>
+                    <li><a href="impactos.html" title="link para impactos">Impactos</a></li>
+                    <li><a href="contato.html" class="active" title="link para contato">Contato</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="about-us-hero wrapper left-effect">
+        <div class="about-us-hero-img">
+            <img src="images/contato.svg" alt="banner sobre nós">
+        </div>
+        <div class="about-us-hero-info">
+            <h1>Entre em <span class="span-purple">contato</span></h1>
+            <p>Preencha o formulário e entre em contato com a gente !!!</p>
+            <div class="form-contato">
+                <form>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome...">
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail...">
+                    <textarea name="text-area" id="text-area" placeholder="Digite sua mensagem" rows="5"></textarea>
+                    <button>Enviar contato</button>
+                </form>
+            </div>
+        </div>
+        </section> 
+    </main>
+    <footer>
+        <section class="wrapper">
+            <div>
+                <h3>Em busca do Shape</h3>
+                <p>Entre em contato conosco:</p>
+                <p>Telefone: 11 99999-9999</p>
+                <p>Email: embuscadoshape@gmail.com</p>
+            </div>
+            <div class="menus-footer">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="index.html"><span class="span-purple">> </span>Home</a></li>
+                    <li><a href="chatbot.html"><span class="span-purple">> </span>Chatbot</a></li>
+                    <li><a href="sobre-nos.html"><span class="span-purple">> </span>Sobre nós</a></li>
+                    <li><a href="impactos.html"><span class="span-purple">> </span>Impactos</a></li>
+                    <li><a href="contato.html"><span class="span-purple">> </span>Contato</a></li>
+                </ul>
+            </div>
+            <div class="menus-footer">
+                <h3>
+                    Sobre nós
+                </h3>
+                <ul>
+                    <li><a href="sobre-nos.html"><span class="span-purple">> </span>Empresa</a></li>
+                    <li><a href="contato.html"><span class="span-purple">> </span>Contato</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="Copyright">
+            <p>© 2024 Copyright: Em busca do Shape</p>
+        </section>
+    </footer>
+    <script>
+        document.querySelector('.scroll-down-btn').addEventListener('click', function () {
+            window.scrollBy({
+                top: 500,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+     <script>
+        const header = document.getElementById('header');
+        function checkScroll() {
+            if (window.scrollY > 0) {
+                header.classList.add('move-header');
+            } else {
+                header.classList.remove('move-header');
+            }
+        }
+        window.addEventListener('scroll', checkScroll);
+    </script>
+    <script>
+        var slideUp = {
+    distance: '150%',
+    origin: 'bottom',
+    opacity: null,
+    interval: 16,
+};
+        ScrollReveal().reveal('.cards', slideUp);
+
+        var lefteffect = {
+    distance: '150%',
+    origin: 'left',
+    opacity: null,
+    interval: 16,
+    reset: true,
+};
+        ScrollReveal().reveal('.left-effect', lefteffect);
+    </script>
+
+
+</body>
+
+</html>
